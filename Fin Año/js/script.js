@@ -1,4 +1,4 @@
-$(".btn-VER-MENU").on('click', function(){
+$('.btn-VER-MENU').on('click', function(){
     
     $('.pagina-izquierda').addClass("pagina-izquierda2");
 
@@ -6,5 +6,15 @@ $(".btn-VER-MENU").on('click', function(){
 
     $('.pagina-derecha').addClass("pagina-derecha2");
 
+    }, 300)
+})
+
+$('.btn-cerrar').on('click', function(){
+    
+    $('.pagina-derecha').removeClass("pagina-derecha2");
+    
+    setTimeout(function(){
+        $('.pagina-izquierda').removeClass("pagina-izquierda2");
+    
     }, 300)
 })
